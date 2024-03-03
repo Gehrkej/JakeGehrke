@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/JakeGehrke/static/css/main.67f2cacd.css",
+    "main.js": "/JakeGehrke/static/js/main.4b746359.js",
+    "static/media/me.png": "/JakeGehrke/static/media/me.4bde35f145cf0fe78765.png",
+    "static/media/DraftTimeGraphic.jpeg": "/JakeGehrke/static/media/DraftTimeGraphic.575e4c4d9b4b4afe071f.jpeg",
+    "static/media/me-about.JPG": "/JakeGehrke/static/media/me-about.2d4f3c0178b25cfcc608.JPG",
+    "static/media/Resume.pdf": "/JakeGehrke/static/media/Resume.56c8edbeacb73ef7672d.pdf",
+    "static/media/portfolio3.jpg": "/JakeGehrke/static/media/portfolio3.cbab42559fe73e73906f.jpg",
+    "static/media/portfolio4.jpg": "/JakeGehrke/static/media/portfolio4.6bf60cbb8fe5f7d7af5d.jpg",
+    "static/media/ftpGraphic.png": "/JakeGehrke/static/media/ftpGraphic.08f5b2f951254c021802.png",
+    "static/media/mstGraphic.png": "/JakeGehrke/static/media/mstGraphic.b2bc1ec45e48d02a055f.png",
+    "static/media/Priority_Queue.png": "/JakeGehrke/static/media/Priority_Queue.45a8ed38106ebff828cf.png",
+    "index.html": "/JakeGehrke/index.html",
+    "main.67f2cacd.css.map": "/JakeGehrke/static/css/main.67f2cacd.css.map",
+    "main.4b746359.js.map": "/JakeGehrke/static/js/main.4b746359.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67f2cacd.css",
+    "static/js/main.4b746359.js"
+  ]
+}
