@@ -1,29 +1,23 @@
-import React from 'react'
-import Header from "./components/header/header"
-import Nav from "./components/nav/nav"
-import About from "./components/about/about"
-import Experiece from "./components/experience/experience"
-import Services from "./components/services/services"
-import Portfolio from "./components/portfolio/portfolio"
-import Contact from "./components/contact/contact"
-import Footer from "./components/footer/footer"
-
-
+import React from "react";
+import Home from "./home";
+import NotFound from "./components/notFound/NotFound";
+import { Routes, Route, Navigate, NavLink } from "react-router-dom";
 
 const app = () => {
-    return (
-        <>
-            <Header />
-            <Nav />
-            <About />
-            <Experiece />
-            <Services />
-            <Portfolio />
-            {/* <Testimonials /> */}
-            <Contact />
-            <Footer />
-        </>
-    )
-}
+  return (
+    <>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/home" element={<Navigate to="/" />} />
+        <Route path="/JakeGehrke" element={<Navigate to="/" />} />
+        {/* <Route path="/menu" element={<Menu />}>
+          <Route index element={<Specials />} />
+          <Route path=":menuItem" element={<MenuItem />} />
+        </Route> */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
+  );
+};
 
-export default app
+export default app;
