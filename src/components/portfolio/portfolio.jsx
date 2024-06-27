@@ -8,6 +8,7 @@ import IMG5 from '../../assets/Priority_Queue.png'
 import IMG6 from '../../assets/mstGraphic.png'
 
 import ProjectData from '../../data/projects.json'
+import { Link } from 'react-router-dom'
 
 const images = {
     'DraftTimeGraphic.jpeg': IMG1,
@@ -78,8 +79,9 @@ const portfolio = () => {
                             </div>
                             <h3>{title}</h3>
                             <div className="portfolio__item-cta">
-                                <a href={github} className="btn" target="_blank">Github</a>
-                                <a href={`/projects/${id}`} className="btn btn-primary" target="_blank">View Project</a>
+                                <a className="btn" target="_blank">Github</a>
+                                <Link to={`/projects/${id}`}><a className="btn btn-primary" target="_blank">View
+                                    Project </a></Link>
                             </div>
 
                         </article>
