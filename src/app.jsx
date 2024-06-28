@@ -1,27 +1,23 @@
 import React from 'react'
-import Header from "./components/header/header"
-import Nav from "./components/nav/nav"
-import About from "./components/about/about"
-import Experiece from "./components/experience/experience"
-import Services from "./components/services/services"
-import Portfolio from "./components/portfolio/portfolio"
-import Contact from "./components/contact/contact"
-import Footer from "./components/footer/footer"
-
-
+import Home from './home'
+import NotFound from './components/notFound/NotFound'
+import Project from './components/project/Project'
+import Projects from './components/project/Projects'
+import { Routes, Route, Navigate, NavLink } from 'react-router-dom'
 
 const app = () => {
     return (
         <>
-            <Header />
-            <Nav />
-            <About />
-            <Experiece />
-            <Services />
-            <Portfolio />
-            {/* <Testimonials /> */}
-            <Contact />
-            <Footer />
+            <Routes>
+                <Route index element={<Home />} />
+                <Route path="/home" element={<Navigate to="/" />} />
+                <Route path="/JakeGehrke" element={<Navigate to="/" />} />
+                <Route path="/projects" element={<Projects />}>
+                    <Route path=":id" element={<Project />} />
+                    {/* <Route path=":menuItem" element={<MenuItem />} /> */}
+                </Route>
+                <Route path="*" element={<NotFound />} />
+            </Routes>
         </>
     )
 }
