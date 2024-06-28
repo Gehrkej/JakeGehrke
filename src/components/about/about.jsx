@@ -55,9 +55,11 @@ const about = () => {
 
                         <p>Professionally, I served as the Website and Media Development Coordinator for the Associated
                             Students of Oregon State University (ASOSU). In this role, I enhanced the website’s design
-                            and functionality, led the migration to Drupal 10, and designed marketing materials that
+                            and functionality, led the migration to Drupal 10. On top of this, I designed marketing
+                            materials that
                             significantly increased student engagement. Previously, I worked as a Student Technician at
-                            OSU's MIME IT, providing technical support and managing work through a ticketing system.</p>
+                            OSU's MIME IT, providing technical support to faculty and managing work through a ticketing
+                            system.</p>
 
                         <p>Beyond my academic and professional pursuits, I have demonstrated leadership as President of
                             the Oregon State University Club Baseball team, where I managed internal affairs and
