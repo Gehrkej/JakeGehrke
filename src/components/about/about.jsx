@@ -44,7 +44,7 @@ const about = () => {
                             a minor in General Business. My academic journey culminated with a GPA of 3.81, earning me
                             the Greek honors of magna cum laude.</p>
                         <p>Throughout my studies, I engaged in a variety of impactful projects. For my senior capstone,
-                            I collaborated with the OSU Men's golf team to develop a custom training app. We protoyped
+                            I collaborated with the OSU Men's golf team to develop a custom training app. We prototyped
                             the application with Figma, developed the front end in React
                             Native, and took a serverless approach by using Google Firebase. Additionally, I created a
                             responsive weather web
