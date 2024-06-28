@@ -43,8 +43,11 @@ const portfolio = () => {
                             <h3>{title}</h3>
                             <small className="portfolio__item-description">{`${description.slice(0, 100)}...`}</small>
                             <div className="portfolio__item-cta">
-                                <Link to={`/projects/${id}`}><a className="btn btn-primary" target="_blank">View
-                                    Project </a></Link>
+                                <Link to={`/projects/${id}`}>
+                                    <div className="btn btn-primary" target="_blank">View
+                                        Project
+                                    </div>
+                                </Link>
                             </div>
 
                         </article>

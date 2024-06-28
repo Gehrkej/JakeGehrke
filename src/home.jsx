@@ -23,7 +23,7 @@ const Home = () => {
     useEffect(() => {
         const hashValue = window.location.hash
         const valueAfterHash = hashValue.slice(1) // Removes the '#'
-        if (valueAfterHash == 'portfolio') {
+        if (valueAfterHash === 'portfolio') {
 
             scrollToPortfolio()
         }

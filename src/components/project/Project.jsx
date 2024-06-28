@@ -16,9 +16,6 @@ import { MdOutlineDateRange } from 'react-icons/md'
 import { GiTechnoHeart } from 'react-icons/gi'
 import { SiProgress } from 'react-icons/si'
 
-
-import { FiUsers } from 'react-icons/fi'
-
 import ProjectData from '../../data/projects.json'
 import { useParams } from 'react-router-dom'
 
@@ -39,7 +36,7 @@ function Project() {
 
     const { id } = useParams()
 
-    const projectIndex = ProjectData.data.findIndex(project => project.id == id)
+    const projectIndex = ProjectData.data.findIndex(project => project.id === parseInt(id))
 
     const project = ProjectData.data[projectIndex]
 
@@ -48,7 +45,7 @@ function Project() {
             <div className="container about__container">
                 <div className="about__me">
                     <div className="about__me-image">
-                        <img src={images[project.image]} alt="project image" />
+                        <img src={images[project.image]} alt={project.title} />
                     </div>
                 </div>
                 <div className="about__content">
@@ -80,10 +77,10 @@ function Project() {
                         <p>
                             {project.description}
                         </p>
-                        {project.github != '' ? <a href={project.github} className="btn btn-primary">
+                        {project.github !== '' ? <a href={project.github} className="btn btn-primary">
                             Visit Github Repo
                         </a> : <></>}
-                        {project.live != '' ? <a href={project.live} className="btn">
+                        {project.live !== '' ? <a href={project.live} className="btn">
                             Visit Project
                         </a> : <></>}
                     </div>

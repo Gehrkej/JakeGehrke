@@ -13,7 +13,7 @@ const nav = () => {
     // const [activeNav, setActiveNav] = useState('#') 
     return (
         <nav>
-            <a href="#"><AiOutlineHome /></a>
+            <a href="#home"><AiOutlineHome /></a>
             <a href="#about"><AiOutlineUser /></a>
             <a href="#experience"><BiBook /></a>
             <a href="#services"><RiServiceLine /></a>

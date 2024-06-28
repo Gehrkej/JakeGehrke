@@ -3,7 +3,7 @@ import Home from './home'
 import NotFound from './components/notFound/NotFound'
 import Project from './components/project/Project'
 import Projects from './components/project/Projects'
-import { Routes, Route, Navigate, NavLink } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 
 const app = () => {
     return (
