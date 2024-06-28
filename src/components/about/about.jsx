@@ -2,47 +2,47 @@ import React from 'react'
 import './about.css'
 import ME from '../../assets/me-about.JPG'
 import MeProfessional from '../../assets/me-professional.png'
-import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
-import {VscFolderLibrary} from 'react-icons/vsc'
+import { FaAward } from 'react-icons/fa'
+import { FiUsers } from 'react-icons/fi'
+import { VscFolderLibrary } from 'react-icons/vsc'
 
 const about = () => {
     return (
-        <section id='about'>
+        <section id="about">
             <h5>Get To Know</h5>
             <h2>About Me</h2>
 
             <div className="container about__container">
                 <div className="about__me">
                     <div className="about__me-image">
-                        <img src={ME} alt="Me in my OSU Baseball Uniform"/>
+                        <img src={ME} alt="Me in my OSU Baseball Uniform" />
                     </div>
                     <div className="about__me-image">
-                        <img src={MeProfessional} alt="Me at an ASOSU Work Event"/>
+                        <img src={MeProfessional} alt="Me at an ASOSU Work Event" />
                     </div>
                 </div>
                 <div className="about__content">
                     <div className="about__content">
                         <div className="about__cards">
-                            <article className='about__card'>
-                                <FaAward className='about__icon'/>
+                            <article className="about__card">
+                                <FaAward className="about__icon" />
                                 <h5>Experience</h5>
                                 <small>Bachelors Degree in Computer Science</small>
                             </article>
-                            <article className='about__card'>
-                                <FiUsers className='about__icon'/>
+                            <article className="about__card">
+                                <FiUsers className="about__icon" />
                                 <h5>Clients</h5>
                                 <small>5+</small>
                             </article>
-                            <article className='about__card'>
-                                <VscFolderLibrary className='about__icon'/>
+                            <article className="about__card">
+                                <VscFolderLibrary className="about__icon" />
                                 <h5>Projects</h5>
                                 <small>20+</small>
                             </article>
                         </div>
                         <p>I am a recent graduate of Oregon State University, holding a degree in Computer Science with
-                            a minor in General Business. My academic journey culminated with a GPA of 3.81 and earn me
-                            greek honors of magna cum laude.</p>
+                            a minor in General Business. My academic journey culminated with a GPA of 3.81, earning me
+                            the Greek honors of magna cum laude.</p>
                         <p>Throughout my studies, I engaged in a variety of impactful projects. For my senior capstone,
                             I collaborated with the OSU Men's golf team to develop a custom training app. We protoyped
                             the application with Figma, developed the front end in React
@@ -69,7 +69,7 @@ const about = () => {
                         <p>Reflecting on my past experience, I look to bring my dedication, hard work, and passion into
                             my professional career.</p>
 
-                        <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+                        <a href="#contact" className="btn btn-primary">Let's Talk</a>
                     </div>
                 </div>
 
