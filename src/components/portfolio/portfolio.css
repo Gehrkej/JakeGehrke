@@ -44,6 +44,10 @@
     margin-bottom: 1rem;
 }
 
+.portfolio__item-description {
+    margin-bottom: 10px;
+}
+
 /* ===== Media Queries (Medium Devices) ====+ */
 @media screen and (max-width: 1024px) {
     .portfolio__containter {

@@ -34,13 +34,14 @@ const portfolio = () => {
             <h2>Portfolio</h2>
 
             <div className="container portfolio__container">
-                {ProjectData.data.map(({ id, image, title, github, demo }) => {
+                {ProjectData.data.map(({ id, image, title, github, demo, description }) => {
                     return (
                         <article key="id" className="portfolio__item">
                             <div className="portfolio__item-image">
                                 <img src={images[image]} alt={title} className="portfolio__image" />
                             </div>
                             <h3>{title}</h3>
+                            <small className="portfolio__item-description">{`${description.slice(0, 100)}...`}</small>
                             <div className="portfolio__item-cta">
                                 <Link to={`/projects/${id}`}><a className="btn btn-primary" target="_blank">View
                                     Project </a></Link>
