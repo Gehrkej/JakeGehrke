@@ -2,67 +2,30 @@ import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/DraftTimeGraphic.jpeg'
 import IMG2 from '../../assets/ftpGraphic.png'
-import IMG3 from '../../assets/portfolio3.jpg' //Need to update this
+import IMG3 from '../../assets/GraphTesting.PNG'
 import IMG4 from '../../assets/portfolio4.jpg' //Need to update this
 import IMG5 from '../../assets/Priority_Queue.png'
 import IMG6 from '../../assets/mstGraphic.png'
-
+import IMG7 from '../../assets/GolfApp.png'
+import IMG8 from '../../assets/FightTheNight.png'
+import IMG9 from '../../assets/ASOSU.png'
 import ProjectData from '../../data/projects.json'
+import IMG10 from '../../assets/TarpaulinApi.png'
+
 import { Link } from 'react-router-dom'
 
 const images = {
     'DraftTimeGraphic.jpeg': IMG1,
     'ftpGraphic.png': IMG2,
-    'portfolio3.jpg': IMG3,
+    'GraphTesting.PNG': IMG3,
     'portfolio4.jpg': IMG4,
     'Priority_Queue.png': IMG5,
     'mstGraphic.png': IMG6,
+    'GolfApp.png': IMG7,
+    'FightTheNight.png': IMG8,
+    'ASOSU.png': IMG9,
+    'TarpaulinApi.png': IMG10,
 }
-
-const data = [
-    {
-        id: 1,
-        image: IMG1,
-        title: 'DraftTime - Web App',
-        github: 'https//github.com',
-        demo: 'https//github.com',
-    },
-    {
-        id: 2,
-        image: IMG2,
-        title: 'Python FTP Server',
-        github: 'https//github.com',
-        demo: 'https//github.com',
-    },
-    {
-        id: 3,
-        image: IMG3,
-        title: 'Weather Mobile Application',
-        github: 'https//github.com',
-        demo: 'https//github.com',
-    },
-    {
-        id: 4,
-        image: IMG4,
-        title: 'Testing Suite for a Graph Creation Application',
-        github: 'https//github.com',
-        demo: 'https//github.com',
-    },
-    {
-        id: 5,
-        image: IMG5,
-        title: 'Priority Queue Implimentation',
-        github: 'https//github.com',
-        demo: 'https//github.com',
-    },
-    {
-        id: 6,
-        image: IMG6,
-        title: 'MST Implimentation',
-        github: 'https//github.com',
-        demo: 'https//github.com',
-    },
-]
 
 const portfolio = () => {
     return (
@@ -75,11 +38,10 @@ const portfolio = () => {
                     return (
                         <article key="id" className="portfolio__item">
                             <div className="portfolio__item-image">
-                                <img src={images[image]} alt={title} />
+                                <img src={images[image]} alt={title} className="portfolio__image" />
                             </div>
                             <h3>{title}</h3>
                             <div className="portfolio__item-cta">
-                                <a className="btn" target="_blank">Github</a>
                                 <Link to={`/projects/${id}`}><a className="btn btn-primary" target="_blank">View
                                     Project </a></Link>
                             </div>
