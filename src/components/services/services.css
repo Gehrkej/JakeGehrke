@@ -1,9 +1,10 @@
 .services__containter {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 
 }
+
 .service {
     background: var(--color-bg-variant);
     border-radius: 0 0 2rem 2rem;
@@ -23,7 +24,7 @@
     background: var(--color-primary);
     padding: 2rem;
     border-radius: 0 0 2rem 2rem;
-    box-shadow: 0 2rem 1rem rgba(0,0,0, 0.1);
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .service__head h3 {
@@ -37,7 +38,7 @@
 
 }
 
-.service__list li{
+.service__list li {
     display: flex;
     gap: 1rem;
     margin-bottom: 0.8rem;
@@ -47,7 +48,7 @@
 .service__list-icon {
     color: var(--color-primary);
     margin-top: 2px;
-
+    font-size: 40px;
 }
 
 .service__list p {
@@ -60,6 +61,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
+
     .service {
         height: auto;
     }
