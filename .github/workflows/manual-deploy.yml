@@ -33,14 +33,10 @@ jobs:
       - name: Build Project
         run: npm run build
       # Upload built artifact to gh-pages
-      - name: Artifact for GitHub Pages
-        run: |
-          echo -e "Debugging\n" && ls -al
-          tar -cvzf github-pages.tar.gz ./build
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "./github-pages.tar.gz"
+          path: "./build"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
