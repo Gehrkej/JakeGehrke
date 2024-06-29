@@ -34,7 +34,9 @@ jobs:
         run: npm run build
       # Upload built artifact to gh-pages
       - name: Artifact for GitHub Pages
-        run: tar -cvzf github-pages.tar.gz /build
+        run: |
+          echo -e "Debugging\n" && ls -al
+          tar -cvzf github-pages.tar.gz ./build
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v1
         with:
