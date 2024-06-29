@@ -31,7 +31,7 @@ jobs:
       - name: Deploy to GitHub Pages
         #uses: actions/setup-node@v3
         run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git remote set-url origin https://git:Gehrkej@github.com/JakeGehrke.git
           npm run deploy -- -u ${{ env.GIT_USER }}
         env:
           GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
