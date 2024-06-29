@@ -28,6 +28,10 @@ jobs:
         run: npm ci
       - name: Build Project
         run: npm run build --if-present
+      - name: Set up GitHub token and repository
+        run: |
+          echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+          echo "GITHUB_REPOSITORY=${{ github.repository }}" >> $GITHUB_ENV
       - name: Deploy to GitHub Pages
         #uses: actions/setup-node@v3
         run: |
