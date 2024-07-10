@@ -63,7 +63,8 @@ const about = () => {
 
                         <p>Beyond my academic and professional pursuits, I have demonstrated leadership as President of
                             the Oregon State University Club Baseball team, where I managed internal affairs and
-                            coordinated with external entities to plan a 19-game season. Some noteworthy events and
+                            coordinated with external entities to plan 2 full seasons, 41 games total. Some noteworthy
+                            events and
                             projects from this were ending 3rd at regional with a final national ranking of 19 out 500
                             teams, fundraising over $2000 each season, and investing in long term assets for the club
                             such as a pitching machine and new jerseys. </p>

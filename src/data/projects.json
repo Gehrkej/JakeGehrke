@@ -2,20 +2,6 @@
   "data": [
     {
       "id": 1,
-      "image": "DraftTimeGraphic.jpeg",
-      "title": "DraftTime - Web App",
-      "github": "",
-      "live": "",
-      "technology": [
-        "React",
-        "Node.js"
-      ],
-      "status": "In-Progress / Paused",
-      "start": "Winter 2023",
-      "description": "DraftTime is a web-based application designed for fantasy football enthusiasts. Users can draft their fantasy football team from a randomly generated roster provided by the application. They will then compete against other users in a head-to-head format, aiming to achieve a perfect 17-0 season based on the fantasy scores of the players on their team."
-    },
-    {
-      "id": 2,
       "image": "GolfApp.png",
       "title": "Golf Drill Challenge",
       "github": "",
@@ -29,7 +15,7 @@
       "description": "The Golf Drill Challenge is a cross-platform mobile application that aims to assist in golf training. It accomplishes this through drill management for coaches, plan distribution for practices, individual drill assignments for players, and team leaderboards to encourage healthy competition. On top of this, player progress is tracked over time on a graphical interface to allow for further insights into player performance. All in all, the Golf Drill Challenge App attempts to bring a digital approach to the training process of golf teams everywhere."
     },
     {
-      "id": 3,
+      "id": 2,
       "image": "FightTheNight.png",
       "title": "Fight The Night",
       "github": "",
@@ -42,7 +28,7 @@
       "description": "\"Fight the Night\" is a 2D pixel art action-platformer developed for a themed game jam centered around \"Cycles.\" Leading the project, I created a detailed development roadmap and managed tight timelines, demonstrating adaptability and efficiency. The result is a polished game experience delivered within the constraints of the game jam."
     },
     {
-      "id": 4,
+      "id": 3,
       "image": "ASOSU.png",
       "title": "ASOSU Website",
       "github": "",
@@ -55,7 +41,7 @@
       "description": "In my time with ASOSU, I enhanced the organization's website through its design and functionality in order to improve user experience and accessibility. This involved leading the migration from Drupal 7 to Drupal 10 as the former was reaching its end of lifecycle. In my time with the website, my efforts contruted to ensuring a user-friendly and modern online presence by redesigning, maintaining, and refactoring the website often."
     },
     {
-      "id": 5,
+      "id": 4,
       "image": "GraphTesting.PNG",
       "title": "Testing Suite for a Graph Creation Application",
       "github": "",
@@ -69,7 +55,7 @@
       "description": "This project involved creating a testing suite for an application, which enables users to create line charts, scatter plots, and bar charts effortlessly, focuses on ensuring robust functionality and user satisfaction. The testing strategy encompasses comprehensive unit testing to validate data input and chart generation processes, integration testing to confirm seamless interaction with the API, and end-to-end testing to simulate user flows and validate gallery-saving functionalities."
     },
     {
-      "id": 6,
+      "id": 5,
       "image": "portfolio4.jpg",
       "title": "Weather Mobile Application",
       "github": "",
@@ -80,6 +66,21 @@
       "status": "Completed",
       "start": "Winter 2023",
       "description": "My Weather mobile application provides users with real-time weather updates in a responsive and visually appealing interface. Developed using Kotlin, the application ensures efficient and scalable performance on android devices. By integrating the OpenWeather API, users can easily retrieve and view current weather conditions for their specified cities, making it a reliable tool for staying informed about weather changes."
+    },
+    {
+      "id": 6,
+      "image": "DraftTimeGraphic.jpeg",
+      "title": "DraftTime - Web App",
+      "github": "",
+      "live": "",
+      "technology": [
+        "React",
+        "Redux",
+        "Node.js"
+      ],
+      "status": "In-Progress / Paused",
+      "start": "Winter 2023",
+      "description": "DraftTime is a web-based application designed for fantasy football enthusiasts. Users can draft their fantasy football team from a randomly generated roster provided by the application. They will then compete against other users in a head-to-head format, aiming to achieve a perfect 17-0 season based on the fantasy scores of the players on their team. A proof of concept was created in winter of 2023 for a class project. Design work then picked up again in Summer of 2024 though advancement has come to a halt due to unforeseen costs in sport data collection."
     },
     {
       "id": 7,

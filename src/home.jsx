@@ -27,7 +27,6 @@ const Home = () => {
 
             scrollToPortfolio()
         }
-        console.log(valueAfterHash) // Output: "portfolio"
     }, [])
 
     return (
