@@ -16,8 +16,8 @@ const nav = () => {
             <a href="#home"><AiOutlineHome /></a>
             <a href="#about"><AiOutlineUser /></a>
             <a href="#experience"><BiBook /></a>
-            <a href="#services"><RiServiceLine /></a>
             <a href="#portfolio"><IoFileTrayStackedOutline /></a>
+            <a href="#services"><RiServiceLine /></a>
             <a href="#contact"><BiMessageSquareDetail /></a>
         </nav>
     )

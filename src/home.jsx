@@ -36,8 +36,8 @@ const Home = () => {
             <Nav />
             <About />
             <Experiece />
-            <Services />
             <Portfolio />
+            <Services />
             <Contact />
             <Footer />
         </>
