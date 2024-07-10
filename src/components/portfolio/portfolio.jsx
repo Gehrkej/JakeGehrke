@@ -36,7 +36,7 @@ const portfolio = () => {
             <div className="container portfolio__container">
                 {ProjectData.data.map(({ id, image, title, github, demo, description }) => {
                     return (
-                        <article key="id" className="portfolio__item">
+                        <article key={id} className="portfolio__item">
                             <div className="portfolio__item-image">
                                 <img src={images[image]} alt={title} className="portfolio__image" />
                             </div>
