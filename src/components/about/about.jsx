@@ -113,7 +113,7 @@ const About = () => {
                             </article>
                         </div>
                         <p>I am a recent graduate of Oregon State University, holding a degree in Computer Science with
-                            a minor in General Business. My academic journey culminated with a GPA of 3.81, earning me
+                            a minor in General Business. My academic journey culminated with a GPA of 3.82, earning me
                             the Greek honors of magna cum laude.</p>
                         <p>Throughout my studies, I engaged in a variety of impactful projects. For my senior capstone,
                             I collaborated with the OSU Men's golf team to develop a custom training app. We prototyped
