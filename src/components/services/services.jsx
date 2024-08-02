@@ -1,14 +1,49 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './services.css'
 import { BiCheck } from 'react-icons/bi'
+import { motion, useAnimation } from 'framer-motion'
 
-const services = () => {
+const Services = () => {
+    const controls = useAnimation();
+    const ref = useRef(null);
+
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    controls.start({
+                        opacity: 1,
+                        transition: { duration: 1.5 }
+                    });
+                }
+            },
+            {
+                threshold: 0.1,
+            }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        // Cleanup the observer on component unmount
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, [controls]);
+
     return (
         <section id="services">
             <h5>What I Offer</h5>
             <h2>Services</h2>
 
-            <div className="container services__containter">
+            <motion.div className="container services__containter"
+                        ref={ref}
+                        initial={{ opacity: 0 }}
+                        animate={controls}>
                 <article className="service">
                     <div className="service__head">
                         <h3>Web Development</h3>
@@ -156,9 +191,9 @@ const services = () => {
                 </article>
                 {/* END OF GAME DEVELOPMENT */}
 
-            </div>
+            </motion.div>
         </section>
     )
 }
 
-export default services
+export default Services
