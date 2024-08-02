@@ -1,14 +1,51 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './experience.css'
 import { BsPatchCheckFill } from 'react-icons/bs'
+import { motion, useAnimation } from 'framer-motion';
 
-const experience = () => {
+
+const Experience = () => {
+    const controls = useAnimation();
+    const ref = useRef(null);
+
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    controls.start({
+                        opacity: 1,
+                        transition: { duration: 1.5 }
+                    });
+                }
+            },
+            {
+                threshold: 0.1,
+            }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        // Cleanup the observer on component unmount
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, [controls]);
+
+
     return (
         <section id="experience">
             <h5>What Skills I Have</h5>
             <h2>My Experience</h2>
 
-            <div className="container experience__container">
+            <motion.div className="container experience__container"
+                        ref={ref}
+                        initial={{ opacity: 0 }}
+                        animate={controls}>
                 <div className="experience__frontend">
                     <h3>Frontend Development</h3>
                     <div className="experience__content">
@@ -145,7 +182,7 @@ const experience = () => {
                 </div>
                 {/*End Backend*/}
 
-                <div className="experience__Programming">
+                <div className="experience__programming">
                     <h3>Other Programming</h3>
                     <div className="experience__content">
 
@@ -192,7 +229,7 @@ const experience = () => {
                 </div>
                 {/*End Programming*/}
 
-                <div className="experience__Programming">
+                <div className="experience__business">
                     <h3>Business Experience</h3>
                     <div className="experience__content">
 
@@ -244,9 +281,9 @@ const experience = () => {
                     </div>
 
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }
 
-export default experience
+export default Experience

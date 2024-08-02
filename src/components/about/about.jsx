@@ -1,27 +1,99 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './about.css'
 import ME from '../../assets/me-about.JPG'
 import MeProfessional from '../../assets/me-professional.png'
 import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
+import { motion, useAnimation } from 'framer-motion';
 
-const about = () => {
+
+const About = () => {
+    const controls = useAnimation();
+    const ref = useRef(null);
+
+    //Picture hook
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    controls.start({
+                        x: 0,
+                        opacity: 1,
+                        transition: { duration: 1 }
+                    });
+                }
+            },
+            {
+                threshold: [0.1, 0.25, 0.5, 0.75, 1.0],
+            }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        // Cleanup the observer on component unmount
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, [controls]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    controls.start({
+                        y: 0,
+                        opacity: 1,
+                        transition: { duration: 1 }
+                    });
+                }
+            },
+            {
+                threshold: [0.1, 0.25, 0.5, 0.75, 1.0]
+            }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        // Cleanup the observer on component unmount
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, [controls]);
+
+
+
+
+
     return (
         <section id="about">
             <h5>Get To Know</h5>
             <h2>About Me</h2>
 
-            <div className="container about__container">
-                <div className="about__me">
+            <div className="container about__container" ref={ref}>
+                <motion.div className="about__me"
+                            ref={ref}
+                            initial={{ x: -100, opacity: 0 }}
+                            animate={controls}>
                     <div className="about__me-image">
                         <img src={ME} alt="Me in my OSU Baseball Uniform" />
                     </div>
                     <div className="about__me-image">
                         <img src={MeProfessional} alt="Me at an ASOSU Work Event" />
                     </div>
-                </div>
-                <div className="about__content">
+                </motion.div>
+                <motion.div className="about__content"
+                            ref={ref}
+                            initial={{ y: 100, opacity: 0 }}
+                            animate={controls}>
                     <div className="about__content">
                         <div className="about__cards">
                             <article className="about__card">
@@ -41,7 +113,7 @@ const about = () => {
                             </article>
                         </div>
                         <p>I am a recent graduate of Oregon State University, holding a degree in Computer Science with
-                            a minor in General Business. My academic journey culminated with a GPA of 3.81, earning me
+                            a minor in General Business. My academic journey culminated with a GPA of 3.82, earning me
                             the Greek honors of magna cum laude.</p>
                         <p>Throughout my studies, I engaged in a variety of impactful projects. For my senior capstone,
                             I collaborated with the OSU Men's golf team to develop a custom training app. We prototyped
@@ -74,7 +146,7 @@ const about = () => {
 
                         <a href="#contact" className="btn btn-primary">Let's Talk</a>
                     </div>
-                </div>
+                </motion.div>
 
 
             </div>
@@ -83,4 +155,4 @@ const about = () => {
     )
 }
 
-export default about
+export default About

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/DraftTimeGraphic.jpeg'
 import IMG2 from '../../assets/ftpGraphic.png'
@@ -13,6 +13,7 @@ import ProjectData from '../../data/projects.json'
 import IMG10 from '../../assets/TarpaulinApi.png'
 
 import { Link } from 'react-router-dom'
+import { motion, useAnimation } from 'framer-motion';
 
 const images = {
     'DraftTimeGraphic.jpeg': IMG1,
@@ -27,13 +28,50 @@ const images = {
     'TarpaulinApi.png': IMG10,
 }
 
-const portfolio = () => {
+const Portfolio = () => {
+    const controls = useAnimation();
+    const ref = useRef(null);
+
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    controls.start({
+                        opacity: 1,
+                        transition: { duration: 1.5 }
+                    });
+                }
+            },
+            {
+                threshold: 0.1,
+            }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        // Cleanup the observer on component unmount
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, [controls]);
+
+
+
+
     return (
         <section id="portfolio">
             <h5>My Recent Work</h5>
             <h2>Portfolio</h2>
 
-            <div className="container portfolio__container">
+            <motion.div className="container portfolio__container"
+                        ref={ref}
+                        initial={{ opacity: 0 }}
+                        animate={controls}>
                 {ProjectData.data.map(({ id, image, title, github, demo, description }) => {
                     return (
                         <article key={id} className="portfolio__item">
@@ -53,10 +91,10 @@ const portfolio = () => {
                         </article>
                     )
                 })}
-            </div>
+            </motion.div>
 
         </section>
     )
 }
 
-export default portfolio
+export default Portfolio
