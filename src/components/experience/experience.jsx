@@ -101,7 +101,7 @@ const Experience = () => {
                             <BsPatchCheckFill className="experience__details-icons" />
                             <div>
                                 <h4>Kotlin</h4>
-                                <small className="text-light">>1 Year</small>
+                                <small className="text-light">&lt;1 Year</small>
                             </div>
 
                         </article>
@@ -109,7 +109,7 @@ const Experience = () => {
                             <BsPatchCheckFill className="experience__details-icons" />
                             <div>
                                 <h4>Emotion</h4>
-                                <small className="text-light">>1 Year</small>
+                                <small className="text-light">&lt;1 Year</small>
                             </div>
                         </article>
 
@@ -124,7 +124,7 @@ const Experience = () => {
                         <article className="experience__details">
                             <BsPatchCheckFill className="experience__details-icons" />
                             <div>
-                                <h4>Node JS</h4>
+                                <h4>Express Js</h4>
                                 <small className="text-light">2 Years</small>
                             </div>
                         </article>
@@ -146,35 +146,35 @@ const Experience = () => {
                             <BsPatchCheckFill className="experience__details-icons" />
                             <div>
                                 <h4>MongoDB</h4>
-                                <small className="text-light">>1 Year</small>
+                                <small className="text-light">&lt;1 Year</small>
                             </div>
                         </article>
                         <article className="experience__details">
                             <BsPatchCheckFill className="experience__details-icons" />
                             <div>
                                 <h4>RabbitMQ</h4>
-                                <small className="text-light">>1 Year</small>
+                                <small className="text-light">&lt;1 Year</small>
                             </div>
                         </article>
                         <article className="experience__details">
                             <BsPatchCheckFill className="experience__details-icons" />
                             <div>
                                 <h4>Redis</h4>
-                                <small className="text-light">>1 Year</small>
+                                <small className="text-light">&lt;1 Year</small>
                             </div>
                         </article>
                         <article className="experience__details">
                             <BsPatchCheckFill className="experience__details-icons" />
                             <div>
                                 <h4>PHP</h4>
-                                <small className="text-light">>1 Year</small>
+                                <small className="text-light">&lt;1 Year</small>
                             </div>
                         </article>
                         <article className="experience__details">
                             <BsPatchCheckFill className="experience__details-icons" />
                             <div>
                                 <h4>Docker</h4>
-                                <small className="text-light">>1 Year</small>
+                                <small className="text-light">&lt;1 Year</small>
                             </div>
 
                         </article>
@@ -205,7 +205,7 @@ const Experience = () => {
                             <BsPatchCheckFill className="experience__details-icons" />
                             <div>
                                 <h4>C#</h4>
-                                <small className="text-light">>1 Year</small>
+                                <small className="text-light">&lt;1 Year</small>
                             </div>
 
                         </article>
@@ -213,7 +213,7 @@ const Experience = () => {
                             <BsPatchCheckFill className="experience__details-icons" />
                             <div>
                                 <h4>Assembly</h4>
-                                <small className="text-light">>1 Year</small>
+                                <small className="text-light">&lt;1 Year</small>
                             </div>
 
                         </article>
@@ -221,7 +221,7 @@ const Experience = () => {
                             <BsPatchCheckFill className="experience__details-icons" />
                             <div>
                                 <h4>Unity</h4>
-                                <small className="text-light">>1 Year</small>
+                                <small className="text-light">&lt;1 Year</small>
                             </div>
                         </article>
                     </div>
