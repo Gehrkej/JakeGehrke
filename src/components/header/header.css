@@ -1,7 +1,5 @@
 header {
-    height: 100vh;
     padding-top: 7rem;
-    overflow: hidden;
 }
 
 .header__container {
@@ -39,15 +37,19 @@ header {
 
 /* ======= ME ====== */
 
+.photo__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
 .me {
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
     height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
+    position: relative;
     margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 
 }

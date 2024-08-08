@@ -27,12 +27,14 @@ const header = () => {
                     <HeaderSocials />
                 </motion.div>
 
+                <div className='photo__container'>
                 <motion.div className="me"
                             initial={{ y: 100, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 1 }}>
                     <img src={ME} alt="me" />
                 </motion.div>
+            </div>
             </div>
 
 
