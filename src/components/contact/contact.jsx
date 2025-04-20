@@ -84,7 +84,7 @@ const Contact = () => {
                             <FaGithub />
                         </div>
                         <h4>GitHub</h4>
-                        <h5>@jakegehrke</h5>
+                        <h5>@gehrkej</h5>
                         <a
                             href="https://github.com/gehrkej"
                             target="_blank"
