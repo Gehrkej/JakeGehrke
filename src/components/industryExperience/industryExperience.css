@@ -1,0 +1,155 @@
+.industry-experience__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.industry-experience__timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.industry-experience__timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: var(--color-primary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.industry-experience__item {
+    padding: 2rem;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.industry-experience__item:nth-child(odd) {
+    left: 0;
+    padding-right: 3rem;
+}
+
+.industry-experience__item:nth-child(even) {
+    left: 50%;
+    padding-left: 3rem;
+}
+
+.industry-experience__icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: var(--color-bg);
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -20px;
+    z-index: 1;
+}
+
+.industry-experience__item:nth-child(even) .industry-experience__icon {
+    left: -20px;
+}
+
+.industry-experience__content {
+    padding: 2rem;
+    background: var(--color-bg-variant);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.industry-experience__content h3 {
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.industry-experience__content h4 {
+    color: var(--color-light);
+    margin-bottom: 0.5rem;
+}
+
+.industry-experience__content small {
+    color: var(--color-light);
+    font-size: 0.8rem;
+}
+
+.industry-experience__content ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.industry-experience__content li {
+    margin-bottom: 0.5rem;
+    color: var(--color-light);
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+    .industry-experience__timeline::after {
+        left: 31px;
+    }
+
+    .industry-experience__item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .industry-experience__item:nth-child(even) {
+        left: 0;
+    }
+
+    .industry-experience__icon {
+        left: 11px;
+    }
+
+    .industry-experience__item:nth-child(even) .industry-experience__icon {
+        left: 11px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .industry-experience__container {
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .industry-experience__timeline {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .industry-experience__timeline::after {
+        display: none;
+    }
+
+    .industry-experience__item {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .industry-experience__icon {
+        display: none;
+    }
+
+    .industry-experience__content {
+        padding: 1rem;
+        width: 100%;
+    }
+}

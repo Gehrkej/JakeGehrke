@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Header from './components/header/header'
 import Nav from './components/nav/nav'
+import IndustryExperience from './components/industryExperience/industryExperience'
 import About from './components/about/about'
 import Experiece from './components/experience/experience'
 import Services from './components/services/services'
@@ -19,12 +20,10 @@ const scrollToPortfolio = () => {
 }
 
 const Home = () => {
-
     useEffect(() => {
         const hashValue = window.location.hash
         const valueAfterHash = hashValue.slice(1) // Removes the '#'
         if (valueAfterHash === 'portfolio') {
-
             scrollToPortfolio()
         }
     }, [])
@@ -33,6 +32,7 @@ const Home = () => {
         <>
             <Header />
             <Nav />
+            <IndustryExperience />
             <About />
             <Experiece />
             <Portfolio />
