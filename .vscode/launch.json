@@ -1,0 +1,35 @@
+{
+    // Debug the React app in Chrome. Uses VS Code's built-in JavaScript
+    // debugger (the "chrome" type) — no extra extension required.
+    // Set breakpoints directly in the .jsx files under src/.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // One click: starts `npm start`, waits for the dev server to
+            // compile, then opens a debuggable Chrome window.
+            "name": "Debug in Chrome (start dev server)",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+            "preLaunchTask": "Start React Dev Server",
+            "sourceMapPathOverrides": {
+                "webpack:///src/*": "${webRoot}/src/*",
+                "webpack:///./src/*": "${webRoot}/src/*"
+            }
+        },
+        {
+            // Use this when a dev server is already running (e.g. you ran
+            // `npm start` in a terminal yourself).
+            "name": "Debug in Chrome (server already running)",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+            "sourceMapPathOverrides": {
+                "webpack:///src/*": "${webRoot}/src/*",
+                "webpack:///./src/*": "${webRoot}/src/*"
+            }
+        }
+    ]
+}

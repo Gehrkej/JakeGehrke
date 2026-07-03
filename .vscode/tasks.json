@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            // Runs `npm start` as a background task. BROWSER=none stops CRA
+            // from opening its own browser tab — the debug config opens the
+            // debuggable Chrome window instead. The background problemMatcher
+            // lets VS Code know when the server has finished compiling so the
+            // debugger launches at the right time.
+            "label": "Start React Dev Server",
+            "type": "npm",
+            "script": "start",
+            "isBackground": true,
+            "options": {
+                "env": {
+                    "BROWSER": "none"
+                }
+            },
+            "problemMatcher": {
+                "owner": "custom",
+                "pattern": {
+                    "regexp": "^$"
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "Starting the development server|Compiling\\.\\.\\.",
+                    "endsPattern": "Compiled successfully|webpack compiled|Compiled with warnings|Failed to compile"
+                }
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        }
+    ]
+}

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 import CTA from './CTA'
 import ME from '../../assets/me-headshot.png'
-import HeaderSocials from './HeaderSocials'
+import SocialLinks from '../shared/SocialLinks'
 
 const header = () => {
     return (
@@ -24,7 +24,7 @@ const header = () => {
                             animate={{  opacity: 1 }}
                             transition={{ duration: 3 }}>
                     <CTA />
-                    <HeaderSocials />
+                    <SocialLinks />
                 </motion.div>
 
                 <div className='photo__container'>

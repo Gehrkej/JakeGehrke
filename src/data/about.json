@@ -1,0 +1,14 @@
+{
+    "cards": [
+        { "icon": "award", "title": "Experience", "value": "Bachelors Degree in Computer Science" },
+        { "icon": "users", "title": "Clients", "value": "5+" },
+        { "icon": "projects", "title": "Projects", "value": "20+" }
+    ],
+    "paragraphs": [
+        "I am a recent graduate of Oregon State University, holding a degree in Computer Science with a minor in General Business. My academic journey culminated with a GPA of 3.82, earning me the Greek honors of magna cum laude.",
+        "Throughout my studies, I engaged in a variety of impactful projects. For my senior capstone, I collaborated with the OSU Men's golf team to develop a custom training app. We prototyped the application with Figma, developed the front end in React Native, and took a serverless approach by using Google Firebase. Additionally, I created a responsive weather web application with React and Emotion for the front end and enabled real-time data by integrating the OpenWeather API. I also led the development of \"Fight the Night,\" a 2D action-platformer, showcasing my skills in Unity and C#.",
+        "Professionally, I served as the Website and Media Development Coordinator for the Associated Students of Oregon State University (ASOSU). In this role, I enhanced the website's design and functionality, led the migration to Drupal 10. On top of this, I designed marketing materials that significantly increased student engagement. Previously, I worked as a Student Technician at OSU's MIME IT, providing technical support to faculty and managing work through a ticketing system.",
+        "Beyond my academic and professional pursuits, I have demonstrated leadership as President of the Oregon State University Club Baseball team, where I managed internal affairs and coordinated with external entities to plan 2 full seasons, 41 games total. Some noteworthy events and projects from this were ending 3rd at regional with a final national ranking of 19 out 500 teams, fundraising over $2000 each season, and investing in long term assets for the club such as a pitching machine and new jerseys.",
+        "Reflecting on my past experience, I look to bring my dedication, hard work, and passion into my professional career."
+    ]
+}

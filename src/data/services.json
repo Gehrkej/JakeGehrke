@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "title": "Web Development",
+            "items": [
+                "UI/UX Design: Utilizing Figma to create intuitive and visually appealing user interfaces and experiences, ensuring that your website not only looks great but is also user-friendly and easy to navigate.",
+                "Custom Web Development: Tailor-made websites that perfectly match your unique business needs, ensuring a seamless user experience and optimal functionality.",
+                "Responsive Design: Creating websites that adapt to various devices and screen sizes, guaranteeing a consistent and user-friendly experience across desktops, tablets, and mobile devices.",
+                "Front-End Development: Crafting visually appealing and interactive user interfaces using modern web technologies such as HTML5, CSS3, and JavaScript.",
+                "Back-End Development: Building robust and scalable server-side applications and databases to power your website's functionality and handle complex business logic.",
+                "API Integration: Seamlessly connecting your website with third-party services, APIs, or software to enhance functionality, streamline processes, and provide a better user experience.",
+                "Website Maintenance and Support: Providing ongoing support, regular updates, security monitoring, and bug fixes to keep your website secure, up-to-date, and functioning smoothly.",
+                "Website Monetization and Publishing: Offering guidance on monetization strategies, such as advertising, subscription models, or e-commerce solutions, and assisting with the publishing and promotion process to maximize your website's revenue potential."
+            ]
+        },
+        {
+            "title": "Mobile Development",
+            "items": [
+                "UI/UX Design: Utilizing Figma to create intuitive and visually appealing user interfaces and experiences, ensuring that your mobile app not only looks great but is also user-friendly and easy to navigate.",
+                "Custom Mobile App Development: Tailor-made mobile applications that perfectly match your unique business needs, ensuring a seamless user experience and optimal functionality.",
+                "Cross-Platform Compatibility: Developing mobile apps that run smoothly on both iOS and Android devices, providing a consistent and reliable experience across different platforms.",
+                "Front-End Development: Crafting visually appealing and interactive user interfaces using modern technologies such as React Native and Flutter.",
+                "Back-End Development: Building robust and scalable server-side applications and databases to power your mobile app's functionality and handle complex business logic.",
+                "API Integration: Seamlessly connecting your mobile app with third-party services, APIs, or software to enhance functionality, streamline processes, and provide a better user experience.",
+                "App Maintenance and Support: Providing ongoing support, regular updates, security monitoring, and bug fixes to keep your mobile app secure, up-to-date, and functioning smoothly.",
+                "App Monetization and Publishing: Providing guidance on monetization strategies, including in-app purchases, advertising, or premium pricing models, and assisting with the publishing process across various platforms."
+            ]
+        },
+        {
+            "title": "Game Development",
+            "items": [
+                "Game Concept and Design: Assisting clients in conceptualizing game ideas, defining game mechanics, creating engaging narratives, and developing comprehensive game design documents.",
+                "Game Development and Programming: Building games for various platforms (PC, console, mobile) using industry-standard game engines like Unity or Unreal Engine, implementing game mechanics, physics, artificial intelligence, and user interfaces.",
+                "Game Prototyping: Rapidly prototyping game ideas to test mechanics, gameplay, and user experience, allowing for early feedback and iterative development.",
+                "Gameplay Programming: Implementing core gameplay systems, player controls, camera systems, user interfaces, and game progression mechanics to ensure an engaging and enjoyable gaming experience.",
+                "Game Monetization and Publishing: Providing guidance on monetization strategies, including in-app purchases, advertising, or premium pricing models, and assisting with the publishing process across various platforms."
+            ]
+        }
+    ]
+}
