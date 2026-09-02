@@ -1,5 +1,6 @@
 import React from 'react'
 import '../about/about.css'
+import './project.css'
 
 import { MdOutlineDateRange } from 'react-icons/md'
 import { GiTechnoHeart } from 'react-icons/gi'
@@ -14,7 +15,7 @@ function Project() {
     const { id } = useParams()
 
     const projectIndex = ProjectData.data.findIndex(
-        project => project.id === parseInt(id)
+        (project) => project.id === parseInt(id)
     )
 
     const project = ProjectData.data[projectIndex]
@@ -60,8 +61,18 @@ function Project() {
                             </AboutCard>
                         </div>
                         <p>{project.description}</p>
+                        {project.highlights?.length > 0 && (
+                            <ul className="project__highlights">
+                                {project.highlights.map((highlight, index) => (
+                                    <li key={index}>{highlight}</li>
+                                ))}
+                            </ul>
+                        )}
                         {project.github !== '' ? (
-                            <a href={project.github} className="btn btn-primary">
+                            <a
+                                href={project.github}
+                                className="btn btn-primary"
+                            >
                                 Visit Github Repo
                             </a>
                         ) : (

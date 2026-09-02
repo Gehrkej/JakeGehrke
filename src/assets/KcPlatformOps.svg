@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="350" height="200">
+    <rect width="350" height="200" rx="24" fill="#2c2c6c"/>
+    <g fill="none" stroke="#4db5ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M110 40 L170 60 V100 C170 135 140 155 110 165 C80 155 50 135 50 100 V60 Z" fill="#1f1f38"/>
+        <path d="M85 102 L104 121 L138 84"/>
+    </g>
+    <text x="205" y="85" font-family="Poppins, sans-serif" font-size="22" font-weight="600" fill="#ffffff">Auth &amp;</text>
+    <text x="205" y="110" font-family="Poppins, sans-serif" font-size="22" font-weight="600" fill="#ffffff">Platform</text>
+    <text x="205" y="135" font-family="Poppins, sans-serif" font-size="22" font-weight="600" fill="#ffffff">Reliability</text>
+    <text x="205" y="160" font-family="Poppins, sans-serif" font-size="12" fill="rgba(255,255,255,0.6)">accounts · incidents · analytics</text>
+</svg>

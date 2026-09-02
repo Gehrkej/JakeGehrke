@@ -1,0 +1,10 @@
+.project__highlights {
+    margin: 1rem 0 2rem;
+    padding-left: 1.5rem;
+    color: var(--color-light);
+}
+
+.project__highlights li {
+    list-style: disc;
+    margin-bottom: 0.5rem;
+}

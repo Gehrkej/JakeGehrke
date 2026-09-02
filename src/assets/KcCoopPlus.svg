@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="350" height="200">
+    <rect width="350" height="200" rx="24" fill="#2c2c6c"/>
+    <g fill="none" stroke="#4db5ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="40" y="70" width="110" height="70" rx="10" fill="rgba(77,181,255,0.12)"/>
+        <rect x="55" y="55" width="110" height="70" rx="10" fill="rgba(77,181,255,0.12)"/>
+        <rect x="70" y="40" width="110" height="70" rx="10" fill="#1f1f38"/>
+        <line x1="86" y1="60" x2="140" y2="60"/>
+        <line x1="86" y1="76" x2="164" y2="76"/>
+        <line x1="86" y1="92" x2="120" y2="92"/>
+    </g>
+    <circle cx="180" cy="40" r="18" fill="#4db5ff"/>
+    <text x="180" y="47" text-anchor="middle" font-family="Poppins, sans-serif" font-size="22" font-weight="600" fill="#1f1f38">+</text>
+    <text x="205" y="120" font-family="Poppins, sans-serif" font-size="26" font-weight="600" fill="#ffffff">Coop+</text>
+    <text x="205" y="142" font-family="Poppins, sans-serif" font-size="12" fill="rgba(255,255,255,0.6)">Subscription Platform</text>
+    <text x="205" y="160" font-family="Poppins, sans-serif" font-size="12" fill="rgba(255,255,255,0.6)">Knowledge Coop</text>
+</svg>

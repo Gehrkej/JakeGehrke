@@ -7,6 +7,11 @@ import GolfApp from '../assets/GolfApp.png'
 import FightTheNight from '../assets/FightTheNight.png'
 import ASOSU from '../assets/ASOSU.png'
 import TarpaulinApi from '../assets/TarpaulinApi.png'
+import KcCoopPlus from '../assets/KcCoopPlus.svg'
+import KcDesignSystem from '../assets/KcDesignSystem.svg'
+import KcNextGen from '../assets/KcNextGen.svg'
+import KcBilling from '../assets/KcBilling.svg'
+import KcPlatformOps from '../assets/KcPlatformOps.svg'
 
 // Maps the `image` filename stored in projects.json to its imported asset.
 // (JSON can't reference bundled assets by path, so the mapping lives here and
@@ -21,6 +26,11 @@ const projectImages = {
     'FightTheNight.png': FightTheNight,
     'ASOSU.png': ASOSU,
     'TarpaulinApi.png': TarpaulinApi,
+    'KcCoopPlus.svg': KcCoopPlus,
+    'KcDesignSystem.svg': KcDesignSystem,
+    'KcNextGen.svg': KcNextGen,
+    'KcBilling.svg': KcBilling,
+    'KcPlatformOps.svg': KcPlatformOps,
 }
 
 export default projectImages

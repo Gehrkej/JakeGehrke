@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="350" height="200">
+    <rect width="350" height="200" rx="24" fill="#2c2c6c"/>
+    <g stroke="#4db5ff" stroke-width="3" stroke-linejoin="round">
+        <rect x="40" y="40" width="40" height="40" rx="8" fill="#4db5ff"/>
+        <rect x="90" y="40" width="40" height="40" rx="8" fill="#1f1f38"/>
+        <rect x="140" y="40" width="40" height="40" rx="20" fill="#1f1f38"/>
+        <rect x="40" y="90" width="90" height="40" rx="8" fill="#1f1f38"/>
+        <rect x="140" y="90" width="40" height="40" rx="8" fill="rgba(77,181,255,0.35)"/>
+        <rect x="40" y="140" width="140" height="20" rx="10" fill="#1f1f38"/>
+    </g>
+    <text x="205" y="105" font-family="Poppins, sans-serif" font-size="22" font-weight="600" fill="#ffffff">Design</text>
+    <text x="205" y="130" font-family="Poppins, sans-serif" font-size="22" font-weight="600" fill="#ffffff">System</text>
+    <text x="205" y="152" font-family="Poppins, sans-serif" font-size="12" fill="rgba(255,255,255,0.6)">23 components</text>
+</svg>
