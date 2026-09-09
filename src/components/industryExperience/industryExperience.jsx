@@ -89,7 +89,7 @@ const IndustryExperience = () => {
                                     Associated Students of Oregon State
                                     University
                                 </h4>
-                                <small>2020 - 2022</small>
+                                <small>2023 - 2024</small>
                                 <ul>
                                     <li>
                                         As the Media and Website Development
