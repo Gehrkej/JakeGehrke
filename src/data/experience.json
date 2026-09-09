@@ -1,0 +1,27 @@
+{
+    "data": [
+        {
+            "title": "Full-Stack Developer",
+            "org": "Knowledge Coop",
+            "dates": "August 2024 - Present",
+            "bullets": [
+                "Shipped 85+ production changes over 18 months across three products — the Coop+ subscription app, the legacy enterprise learning platform, and a next-generation rebuild — using React, Next.js, TypeScript, Django, and .NET.",
+                "Led the Coop+ UI overhaul: brand colors, typography, spacing, responsive layouts, and redesigns of the course landing page and carousel navigation.",
+                "Built 23+ components for a growing design system from Figma with token-driven styling, variants, and accessibility, adopted across the next-gen platform.",
+                "Delivered systems and features like Library, Content Manager, and Courses for the next-gen rebuild: publishing, drafts, archiving, side navigation, and course CRUD with filter and sort.",
+                "Owned Stripe billing: hosted checkout, Billing Portal, webhook reliability, seat tiers, and QuickBooks-ready invoicing integration.",
+                "Primary responder for production incidents spanning authentication, payments, data integrity, analytics tracking, and app-store compliance."
+            ]
+        },
+        {
+            "title": "Website and Media Development Coordinator",
+            "org": "Associated Students of Oregon State University",
+            "dates": "2020 - 2022",
+            "bullets": [
+                "As the Media and Website Development Coordinator for the Associated Students of Oregon State University (ASOSU), I played a pivotal role in supporting the executive branch by fostering and strengthening relationships with the student body and the broader community.",
+                "Collaborated with the executive branch to develop and maintain the ASOSU website, ensuring it was visually appealing and user-friendly.",
+                "Managed the ASOSU social media platforms (Facebook, Instagram, Twitter) to enhance engagement and promote events."
+            ]
+        }
+    ]
+}

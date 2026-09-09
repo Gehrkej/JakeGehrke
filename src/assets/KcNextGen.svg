@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="350" height="200">
+    <rect width="350" height="200" rx="24" fill="#2c2c6c"/>
+    <g fill="none" stroke="#4db5ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="40" y="40" width="140" height="120" rx="10" fill="#1f1f38"/>
+        <line x1="40" y1="62" x2="180" y2="62"/>
+        <rect x="52" y="76" width="30" height="72" rx="4" fill="rgba(77,181,255,0.2)"/>
+        <rect x="94" y="76" width="74" height="30" rx="4"/>
+        <rect x="94" y="118" width="34" height="30" rx="4"/>
+        <rect x="134" y="118" width="34" height="30" rx="4"/>
+    </g>
+    <circle cx="52" cy="51" r="3" fill="#4db5ff"/>
+    <circle cx="64" cy="51" r="3" fill="#4db5ff"/>
+    <text x="205" y="95" font-family="Poppins, sans-serif" font-size="22" font-weight="600" fill="#ffffff">Next-Gen</text>
+    <text x="205" y="120" font-family="Poppins, sans-serif" font-size="22" font-weight="600" fill="#ffffff">Platform</text>
+    <text x="205" y="142" font-family="Poppins, sans-serif" font-size="12" fill="rgba(255,255,255,0.6)">Library &amp; Courses</text>
+    <text x="205" y="160" font-family="Poppins, sans-serif" font-size="12" fill="rgba(255,255,255,0.6)">ground-up rebuild</text>
+</svg>

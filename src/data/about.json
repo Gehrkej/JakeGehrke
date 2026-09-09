@@ -1,0 +1,17 @@
+{
+    "cards": [
+        {
+            "icon": "award",
+            "title": "Experience",
+            "value": "2+ Years Full-Stack · B.S. Computer Science"
+        },
+        { "icon": "users", "title": "Clients", "value": "5+" },
+        { "icon": "projects", "title": "Projects", "value": "20+" }
+    ],
+    "paragraphs": [
+        "I'm a full-stack developer at Knowledge Coop, where I've worked since August 2024 building learning and subscription products/features for the mortgage industry. I hold a degree in Computer Science with a minor in General Business from Oregon State University, graduating magna cum laude with a 3.82 GPA.",
+        "At Knowledge Coop I led the front-end overhaul of Coop+, implemented our subscription platform variant on the current enterprise app, built 23+ components to a growing design system from Figma for the company's next-generation platform, and now develop systems and features like Library, Content Manager, and Courses for that rebuild. On the legacy platform, I led implementations for our Stripe billing integrations — hosted checkout, the Billing Portal, webhook reliability, and QuickBooks-ready invoicing integration — and I'm a primary responder when production needs attention across auth, payments, and data integrity.",
+        "Before that I served as Website and Media Development Coordinator for the Associated Students of Oregon State University, where I led the site's migration to Drupal 10 and designed marketing materials that increased student engagement. My senior capstone was a React Native and Firebase training app built with the OSU Men's Golf team.",
+        "Beyond my academic and professional pursuits, I have demonstrated leadership as President of the Oregon State University Club Baseball team, where I managed internal affairs and coordinated with external entities to plan 2 full seasons, 41 games total. Some noteworthy events and projects from this were ending 3rd at regional with a final national ranking of 19 out of 500 teams, fundraising over $2000 each season, and investing in long term assets for the club such as a pitching machine and new jerseys."
+    ]
+}

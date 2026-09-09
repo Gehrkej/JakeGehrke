@@ -1,0 +1,60 @@
+{
+    "data": [
+        {
+            "category": "Frontend Development",
+            "className": "experience__frontend",
+            "items": [
+                { "name": "HTML", "level": "4 Years" },
+                { "name": "CSS", "level": "4 Years" },
+                { "name": "JavaScript", "level": "4 Years" },
+                { "name": "React", "level": "3 Years" },
+                { "name": "TypeScript", "level": "2 Years" },
+                { "name": "Figma", "level": "2 Years" },
+                { "name": "Next.js", "level": "1 Year" },
+                { "name": "Design Systems", "level": "1 Year" },
+                { "name": "React Native", "level": "1 Year" },
+                { "name": "Kotlin", "level": "<1 Year" }
+            ]
+        },
+        {
+            "category": "Backend Development",
+            "className": "experience__backend",
+            "items": [
+                { "name": "Express Js", "level": "2 Years" },
+                { "name": "REST APIs", "level": "2 Years" },
+                { "name": "SQL / PostgreSQL", "level": "2 Years" },
+                { "name": "Django", "level": "1 Year" },
+                { "name": "Stripe", "level": "1 Year" },
+                { "name": "C# / .NET", "level": "1 Year" },
+                { "name": "Google Firebase", "level": "1 Year" },
+                { "name": "MongoDB", "level": "<1 Year" },
+                { "name": "Redis", "level": "<1 Year" },
+                { "name": "Docker", "level": "<1 Year" }
+            ]
+        },
+        {
+            "category": "Other Programming",
+            "className": "experience__programming",
+            "items": [
+                { "name": "C/C++", "level": "3 Years" },
+                { "name": "Python", "level": "2 Years" },
+                { "name": "C#", "level": "1 Year" },
+                { "name": "Assembly", "level": "<1 Year" },
+                { "name": "Unity", "level": "<1 Year" }
+            ]
+        },
+        {
+            "category": "Business Experience",
+            "className": "experience__business",
+            "items": [
+                { "name": "Management", "level": "3 Years" },
+                { "name": "Project Management", "level": "2 Years" },
+                { "name": "Agile / Jira", "level": "2 Years" },
+                { "name": "Marketing", "level": "2 Years" },
+                { "name": "Social Media", "level": "2 Years" },
+                { "name": "Budgeting", "level": "1 Year" },
+                { "name": "Accounting", "level": "1 Year" }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "data": [
+        { "href": "#home", "icon": "home", "label": "Home" },
+        { "href": "#industry-experience", "icon": "work", "label": "Industry" },
+        { "href": "#about", "icon": "user", "label": "About" },
+        { "href": "#experience", "icon": "book", "label": "Experience" },
+        { "href": "#portfolio", "icon": "portfolio", "label": "Portfolio" },
+        { "href": "#services", "icon": "services", "label": "Services" },
+        { "href": "#contact", "icon": "contact", "label": "Contact" }
+    ]
+}

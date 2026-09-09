@@ -1,13 +1,22 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import './nav.css'
-import { AiOutlineHome } from 'react-icons/ai'
-import { AiOutlineUser } from 'react-icons/ai'
-import { BiBook } from 'react-icons/bi'
+import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
+import { BiBook, BiMessageSquareDetail } from 'react-icons/bi'
 import { RiServiceLine } from 'react-icons/ri'
-import { BiMessageSquareDetail } from 'react-icons/bi'
 import { IoFileTrayStackedOutline } from 'react-icons/io5'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { MdWorkOutline } from 'react-icons/md'
+import NavData from '../../data/navItems.json'
+
+const navIcons = {
+    home: <AiOutlineHome />,
+    work: <MdWorkOutline />,
+    user: <AiOutlineUser />,
+    book: <BiBook />,
+    portfolio: <IoFileTrayStackedOutline />,
+    services: <RiServiceLine />,
+    contact: <BiMessageSquareDetail />,
+}
 
 const Nav = () => {
     const [activeNav, setActiveNav] = useState('#')
@@ -68,85 +77,20 @@ const Nav = () => {
                         isMobileMenuOpen ? 'mobile-menu-open' : ''
                     }`}
                 >
-                    <a
-                        href="#home"
-                        onClick={() => {
-                            setActiveNav('#home')
-                            closeMobileMenu()
-                        }}
-                        className={activeNav === '#home' ? 'active' : ''}
-                    >
-                        <AiOutlineHome />
-                        <span>Home</span>
-                    </a>
-                    <a
-                        href="#industry-experience"
-                        onClick={() => {
-                            setActiveNav('#industry-experience')
-                            closeMobileMenu()
-                        }}
-                        className={
-                            activeNav === '#industry-experience' ? 'active' : ''
-                        }
-                    >
-                        <MdWorkOutline />
-                        <span>Industry</span>
-                    </a>
-                    <a
-                        href="#about"
-                        onClick={() => {
-                            setActiveNav('#about')
-                            closeMobileMenu()
-                        }}
-                        className={activeNav === '#about' ? 'active' : ''}
-                    >
-                        <AiOutlineUser />
-                        <span>About</span>
-                    </a>
-                    <a
-                        href="#experience"
-                        onClick={() => {
-                            setActiveNav('#experience')
-                            closeMobileMenu()
-                        }}
-                        className={activeNav === '#experience' ? 'active' : ''}
-                    >
-                        <BiBook />
-                        <span>Experience</span>
-                    </a>
-                    <a
-                        href="#portfolio"
-                        onClick={() => {
-                            setActiveNav('#portfolio')
-                            closeMobileMenu()
-                        }}
-                        className={activeNav === '#portfolio' ? 'active' : ''}
-                    >
-                        <IoFileTrayStackedOutline />
-                        <span>Portfolio</span>
-                    </a>
-                    <a
-                        href="#services"
-                        onClick={() => {
-                            setActiveNav('#services')
-                            closeMobileMenu()
-                        }}
-                        className={activeNav === '#services' ? 'active' : ''}
-                    >
-                        <RiServiceLine />
-                        <span>Services</span>
-                    </a>
-                    <a
-                        href="#contact"
-                        onClick={() => {
-                            setActiveNav('#contact')
-                            closeMobileMenu()
-                        }}
-                        className={activeNav === '#contact' ? 'active' : ''}
-                    >
-                        <BiMessageSquareDetail />
-                        <span>Contact</span>
-                    </a>
+                    {NavData.data.map(({ href, icon, label }) => (
+                        <a
+                            key={href}
+                            href={href}
+                            onClick={() => {
+                                setActiveNav(href)
+                                closeMobileMenu()
+                            }}
+                            className={activeNav === href ? 'active' : ''}
+                        >
+                            {navIcons[icon]}
+                            <span>{label}</span>
+                        </a>
+                    ))}
                 </div>
                 <div className="nav__mobile-toggle" onClick={toggleMobileMenu}>
                     {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
